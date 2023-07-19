@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kuhinja.KontrolerDodavanje_3">
+    <content>
+        <GridPane prefHeight="458.0" prefWidth="600.0">
+
+            <children>
+                <Label text="Naziv jela">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+                <Label layoutX="20.0" layoutY="20.0" text="Sastojci" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+                <Label layoutX="20.0" layoutY="27.0" text="Velicina porcije" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+                <TextField fx:id="nazivJelaField" prefHeight="50.0" prefWidth="450.0" GridPane.columnIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="10.0" />
+                    </GridPane.margin>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.9004328846931458" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+                </TextField>
+                <TextArea fx:id="sastojciJelaArea" prefHeight="100.0" prefWidth="443.0" GridPane.columnIndex="2" GridPane.rowIndex="2" wrapText="true">
+                    <GridPane.margin>
+                        <Insets bottom="10.0" />
+                    </GridPane.margin>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.9004328846931458" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+                </TextArea>
+                <TextField fx:id="velicinaPorcijeField" layoutX="20.0" layoutY="13.0" prefHeight="50.0" prefWidth="450.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.9004328846931458" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            </children>
+         <columnConstraints>
+            <ColumnConstraints maxWidth="106.0" minWidth="99.0" prefWidth="106.0" />
+            <ColumnConstraints maxWidth="20.0" minWidth="5.0" prefWidth="19.0" />
+            <ColumnConstraints maxWidth="445.0" minWidth="419.0" prefWidth="419.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </content>
+</DialogPane>
