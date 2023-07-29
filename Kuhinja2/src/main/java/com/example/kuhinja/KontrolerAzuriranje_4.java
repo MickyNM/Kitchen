@@ -8,17 +8,12 @@ import javafx.scene.control.TextField;
 public class KontrolerAzuriranje_4 {
     @FXML
     private TextField nazivJelaField;
-    //    @FXML
-//    private TextField idKuhinjeField;
     @FXML
     private TextArea sastojciJelaArea;
     @FXML
     private TextField velicinaPorcijeField;
-//    private ObradaPodataka obradaPodataka = new ObradaPodataka();
-
 
     public void initialize() {
-//        ObradaPodataka.getInstance().otvoriKonekciju();
         nazivJelaField.setText(ObradaPodataka.getInstance().selektovanoJelo(ObradaPodataka.ID_JELA).getNaziv());
         sastojciJelaArea.setText(ObradaPodataka.getInstance().selektovanoJelo(ObradaPodataka.ID_JELA).getSastojci());
         velicinaPorcijeField.setText(String.valueOf(ObradaPodataka.getInstance().selektovanoJelo(ObradaPodataka.ID_JELA).getvelicina_porcije()));
@@ -29,7 +24,6 @@ public class KontrolerAzuriranje_4 {
         ObradaPodataka.getInstance().otvoriKonekciju();
 
         String naziv = nazivJelaField.getText().trim();
-//        int id_kuhinje = Integer.parseInt(idKuhinjeField.getText().trim());
         String sastojci = sastojciJelaArea.getText().trim();
         int velicina_porcije;
         if (velicinaPorcijeField.getText().trim().isEmpty()) {
