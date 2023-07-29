@@ -29,20 +29,6 @@ public class Main extends Application {
     public void stop() throws Exception {
         ObradaPodataka.getInstance().zatvoriKonekciju();
     }
-
-//        ObradaPodataka obradaPodataka = new ObradaPodataka();
-//        if (!ObradaPodataka.getInstance().otvoriKonekciju()) {
-//            System.out.println("Greska");
-//            return;
-//        }
-
-//      obradaPodataka.dodajJela(new ListaJela_2("Cevap",1,"Rostilj meso",300));
-//      obradaPodataka.dodajJela(new ListaJela_2("Sarma sa vinovim listom",1,"Junece mleveno meso u vinovom listu", 300));
-//      obradaPodataka.obrisiJela(new ListaJela_2("Cevap"));
-//      obradaPodataka.azurirajJela(10,"Sarma sa kupusom" );
-
-
-//        ObradaPodataka.getInstance().zatvoriKonekciju();
     }
 
 
