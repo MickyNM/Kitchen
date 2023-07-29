@@ -26,16 +26,13 @@ public class KontrolerListeJela_2 {
     private BorderPane mainPane;
     @FXML
     private ContextMenu contextMenu;
-    //    private ObradaPodataka obradaPodataka = new ObradaPodataka();
     @FXML
     private ImageView slika;
-
 
     public KontrolerListeJela_2() {
     }
 
     public void initialize() {
-//        ObradaPodataka.getInstance().otvoriKonekciju();
         contextMenu = new ContextMenu();
         MenuItem obrisiJelo = new MenuItem("Delete");
         obrisiJelo.setOnAction(new EventHandler<ActionEvent>() {
@@ -111,7 +108,6 @@ public class KontrolerListeJela_2 {
 
     @FXML
     public void otvoriDijalog() {
-//        obradaPodataka.otvoriKonekciju();
         Dialog<ButtonType> dialog = new Dialog<>();
         dialog.initOwner(mainPane.getScene().getWindow());
         FXMLLoader fxmlLoader = new FXMLLoader();
@@ -137,7 +133,6 @@ public class KontrolerListeJela_2 {
 
     @FXML
     public void otvoriDijalogAzuriranja(int id_jela) {
-//        ObradaPodataka.getInstance().otvoriKonekciju();
         Dialog<ButtonType> dialog = new Dialog<>();
         dialog.initOwner(mainPane.getScene().getWindow());
         FXMLLoader fxmlLoader = new FXMLLoader();
@@ -165,7 +160,6 @@ public class KontrolerListeJela_2 {
     }
 
     public void obrisiJelo(ListaJela_2 listaJela_2) {
-//        obradaPodataka.otvoriKonekciju();
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Brisanje jela sa menu-a");
         alert.setHeaderText("Brisanje jela " + listaJela_2.getNaziv());
@@ -179,7 +173,6 @@ public class KontrolerListeJela_2 {
     }
 
     public void azurirajJelo(ListaJela_2 listaJela_2) {
-//        obradaPodataka.otvoriKonekciju();
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Azuriranje jela sa menu-a");
         alert.setHeaderText("Azuriranje jela " + listaJela_2.getNaziv());
@@ -189,12 +182,7 @@ public class KontrolerListeJela_2 {
         if (rezultat.isPresent() && rezultat.get() == ButtonType.OK) {
             ObradaPodataka.getInstance().azurirajJela(listaJela_2);
 
-        }else {
-
         }
-
-
-
         }
     }
 
