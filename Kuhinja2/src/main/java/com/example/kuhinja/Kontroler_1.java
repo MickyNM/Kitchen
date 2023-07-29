@@ -21,8 +21,6 @@ public class Kontroler_1 {
     @FXML
     private HBox glavniBox;
 
-//    private ObradaPodataka obradaPodataka = new ObradaPodataka();
-
     public void otvaranjeNovogProzora(ActionEvent ae) {
         ObradaPodataka.getInstance().otvoriKonekciju();
         Parent root = null;
