@@ -3,7 +3,7 @@
 ## Java
 Sajt je radjen u Java programskom jeziku. Nazvan „Kuhinja“ jer oslikava ono što većina nas voli.
 Ima široke mogućnosti, u zavisnosti od potreba korisnika. Radi sa bazom, omogućava korisniku vrlo jednostavan rad, unos, brisanje ili ažuriranje podataka.
-Može se koristiti za restorane, kafiće, kafane… Izvorni kod možete videti na našem GitHub-u (vidite link u kontaktima).
+Može se koristiti za restorane, kafiće, kafane…
 
 ![4](https://github.com/MickyNM/beginning/assets/140019715/3a773d77-7ca5-412f-93d1-410a05a16f5b)
 ![5](https://github.com/MickyNM/beginning/assets/140019715/c6a0cc6a-6402-457a-a08f-0ddb34e62ec3)
