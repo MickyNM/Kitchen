@@ -1,9 +1,9 @@
-# Projekat "Kuhinja"
+# Project "Kitchen"
 
 ## Java
-Sajt je radjen u Java programskom jeziku. Nazvan „Kuhinja“ jer oslikava ono što većina nas voli.
-Ima široke mogućnosti, u zavisnosti od potreba korisnika. Radi sa bazom, omogućava korisniku vrlo jednostavan rad, unos, brisanje ili ažuriranje podataka.
-Može se koristiti za restorane, kafiće, kafane…
+The site was created in the Java programming language. Named "Kitchen" because it depicts what most of us love :)
+It has wide possibilities, depending on the needs of the user. It works with the database (SQLite), allowing the user to very easily work: enter, delete or update data.
+It can be used for restaurants, cafes, bars...
 
 ![4](https://github.com/MickyNM/beginning/assets/140019715/3a773d77-7ca5-412f-93d1-410a05a16f5b)
 ![5](https://github.com/MickyNM/beginning/assets/140019715/c6a0cc6a-6402-457a-a08f-0ddb34e62ec3)
